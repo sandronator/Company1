@@ -1,0 +1,7 @@
+/* three-scene.component.scss */
+.renderer-container {
+  width: 100vw; // Full viewport width
+  height: 100vh; // Full viewport height
+  display: block; // Removes extra line-height spacing that could cause scrolling
+  overflow: hidden; // Prevents any scroll bars from appearing
+}

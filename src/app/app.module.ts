@@ -3,12 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ParallaxModule } from 'ngx-parallax';
+import { NgxParallaxModule } from '@yoozly/ngx-parallax';
+import { ThreeSceneComponent } from './three-scene/three-scene.component';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, ParallaxModule],
   providers: [],
   bootstrap: [AppComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgxParallaxModule,
+    ThreeSceneComponent,
+  ],
 })
 export class AppModule {}
